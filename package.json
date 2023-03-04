@@ -2,11 +2,16 @@
   "name": "api-rest-node-typescript",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Lucas Souza",
+  "engines": {
+    "node": "18"
+  },
+  "author": "Juciline Gabriel",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "ts-node-dev ./src/index.ts",
+    "dev": "ts-node-dev ./src/index.ts",
+    "start": "node build/index.js",
+    "build": "tsc",
     "test": "jest"
   },
   "dependencies": {
